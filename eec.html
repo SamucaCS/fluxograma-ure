@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EEC - Unidade Regional de Ensino de Suzano</title>
+    <link rel="stylesheet" href="setor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Unidade Regional de Ensino de Suzano</span>
+                <h1>EEC</h1>
+                <p class="subtitle">Equipe de Especialistas em Currículo</p>
+                <p class="mission">
+                    Apoia a gestão do currículo nas escolas da URE de Suzano: orienta professores,
+                    acompanha a implementação do currículo em sala de aula e promove a formação
+                    continuada, em articulação com a Supervisão de Ensino.
+                </p>
+                <div class="hero-actions">
+                    <a href="#equipe" class="btn btn-primary">Conheça a Equipe</a>
+                    <a href="#atribuicoes" class="btn btn-outline">Atribuições Legais</a>
+                    <a href="index.html" class="btn btn-outline">Voltar ao Organograma</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-school"></i>
+                <h3 class="counter" data-target="62">0</h3>
+                <p>Escolas atendidas na circunscrição</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-gavel"></i>
+                <h3 class="counter" data-target="17">0</h3>
+                <p>Competências legais (Art. 136)</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h3 class="counter" id="stat-pecs" data-target="27">0</h3>
+                <p>Professores Especialistas em Currículo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="base-legal" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">A Equipe e a Base Legal</h2>
+            <p class="section-subtitle">
+                A Equipe de Especialistas em Currículo é formada pelos Professores Especialistas em
+                Currículo (PEC), sob a coordenação da CEC.
+            </p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>A Equipe</h3>
+                    <p>
+                        Composta "por servidores do Quadro do Magistério, responsáveis pelo apoio à
+                        gestão do currículo da rede pública estadual de ensino e em articulação com
+                        as Equipes de Supervisão".
+                    </p>
+                    <span class="status-tag ok">Art. 136</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Legislação Vigente</h3>
+                    <p>
+                        Resolução SEDUC nº 108, de 28 de julho de 2025 &ndash; Aprova o detalhamento
+                        da Estrutura Organizacional da Secretaria da Educação.
+                    </p>
+                    <span class="status-tag ok">Em vigor</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-book"></i></div>
+                    <h3>Funções de PEC e CEC</h3>
+                    <p>
+                        As funções de Professor Especialista em Currículo e de Coordenador de Equipe
+                        Curricular são disciplinadas pela Resolução SEDUC nº 1, de 6 de janeiro de
+                        2026, alterada pela Resolução SEDUC nº 64, de 17 de junho de 2026.
+                    </p>
+                    <span class="status-tag ok">
+                        <a href="https://sedsee.blob.core.windows.net/ficha/Anexo/legislacao07012026092214resol%201%20de%20janeiro.pdf?Time=09%3A33"
+                            target="_blank" rel="noopener">Ver Resolução 1/2026</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="section">
+        <div class="container">
+            <h2 class="section-title">Nossa Equipe</h2>
+            <p class="section-subtitle">
+                <span id="total-pecs">27</span> Professores Especialistas em Currículo organizados
+                em <span id="total-pastas">7</span> pastas.
+            </p>
+
+            <div class="lead-card">
+                <div class="avatar">DS</div>
+                <div>
+                    <div class="lead-role">Coordenação da Equipe Curricular (CEC)</div>
+                    <div class="lead-name">Daniella Lusni de Souza</div>
+                    <div class="lead-links">
+                        <a href="mailto:daniella.souza@professor.educacao.sp.gov.br">
+                            <i class="fa-solid fa-envelope"></i> daniella.souza@professor.educacao.sp.gov.br
+                        </a>
+                        <a href="mailto:suz.eec@educacao.sp.gov.br">
+                            <i class="fa-solid fa-inbox"></i> E-mail do setor: suz.eec@educacao.sp.gov.br
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="pasta-nav" class="pasta-nav" aria-label="Pastas da equipe"></nav>
+
+            <div id="equipe-grupos"></div>
+
+            <noscript>
+                <p class="section-subtitle">
+                    Ative o JavaScript do navegador para ver a lista completa da equipe.
+                </p>
+            </noscript>
+        </div>
+    </section>
+
+    <section id="atribuicoes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Atribuições da EEC</h2>
+            <p class="section-subtitle">
+                Texto integral do artigo 136 da Resolução SEDUC nº 108, de 28 de julho de 2025.
+            </p>
+
+            <p class="legal-caput">
+                "A Equipe de Professores Especialistas em Currículo, composto por servidores do
+                Quadro do Magistério, responsáveis pelo apoio à gestão do currículo da rede pública
+                estadual de ensino e em articulação com as Equipes de Supervisão, têm as seguintes
+                competências:"
+            </p>
+
+            <div class="accordion-wrapper">
+                <button type="button" class="accordion">
+                    Artigo 136 – Competências (incisos I a XVII)
+                </button>
+                <div class="panel">
+                    <ul class="legal-list">
+                        <li>
+                            <strong>I –</strong> implementar ações de apoio pedagógico e educacional
+                            que orientem os professores na condução de procedimentos relativos à
+                            organização e ao funcionamento do currículo nas modalidades de ensino;
+                        </li>
+                        <li>
+                            <strong>II –</strong> orientar os professores:
+                            <ul>
+                                <li>a) na implementação do currículo;</li>
+                                <li>b) na utilização de materiais didáticos e paradidáticos.</li>
+                            </ul>
+                        </li>
+                        <li><strong>III –</strong> avaliar a execução do currículo e propor os ajustes necessários;</li>
+                        <li>
+                            <strong>IV –</strong> acompanhar e orientar os professores em sala de
+                            aula, quando necessário, para garantir a implementação do currículo;
+                        </li>
+                        <li>
+                            <strong>V –</strong> implementar e acompanhar programas e projetos
+                            educacionais da Secretaria relativos à área de atuação que lhes é
+                            própria;
+                        </li>
+                        <li>
+                            <strong>VI –</strong> identificar necessidades e propor ações de formação
+                            continuada de professores e de professores coordenadores no âmbito da
+                            área de atuação que lhes é própria;
+                        </li>
+                        <li>
+                            <strong>VII –</strong> participar da implementação de programas e
+                            projetos de formação continuada, em articulação com a Escola de Formação
+                            e Aperfeiçoamento dos Profissionais da Educação do Estado de São Paulo
+                            "Paulo Renato Costa Souza";
+                        </li>
+                        <li><strong>VIII –</strong> acompanhar e apoiar reuniões pedagógicas realizadas nas escolas;</li>
+                        <li>
+                            <strong>IX –</strong> promover encontros, oficinas de trabalho, grupos de
+                            estudos e outras atividades para divulgar e apoiar a formação docente na
+                            utilização de materiais pedagógicos em cada componente curricular;
+                        </li>
+                        <li><strong>X –</strong> colaborar com a formação dos professores na utilização de materiais pedagógicos;</li>
+                        <li><strong>XI –</strong> participar do processo de elaboração do plano de trabalho da unidade regional de ensino;</li>
+                        <li>
+                            <strong>XII –</strong> elaborar o plano de trabalho da Equipe de
+                            Professores Especialistas em Currículo para melhoria da atuação docente e
+                            do desempenho dos estudantes;
+                        </li>
+                        <li>
+                            <strong>XIII –</strong> orientar, em articulação com a Diretoria de
+                            Educação Especial, as atividades de educação especial e inclusão
+                            educacional no âmbito da área de atuação que lhes é própria;
+                        </li>
+                        <li>
+                            <strong>XIV –</strong> acompanhar o trabalho dos professores e as
+                            metodologias de ensino utilizadas em sala de aula para avaliar e propor
+                            ações de melhoria de desempenho na área de conhecimento;
+                        </li>
+                        <li><strong>XV –</strong> organizar o acervo de materiais e equipamentos didático-pedagógicos;</li>
+                        <li>
+                            <strong>XVI –</strong> implantar e supervisionar as salas de leitura, em
+                            articulação com a Supervisão de Ensino, Subsecretaria Pedagógica e as
+                            escolas;
+                        </li>
+                        <li>
+                            <strong>XVII –</strong> analisar os resultados de avaliações internas e
+                            externas e propor medidas para melhoria dos indicadores da educação
+                            básica, no âmbito da área de atuação que lhes é própria.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="legal-source">
+                Fonte:
+                <a href="https://doe.sp.gov.br/executivo/secretaria-da-educacao/resolucao-seduc-n-108-de-28-de-julho-de-2025-20250728112312201228596"
+                    target="_blank" rel="noopener">
+                    Resolução SEDUC nº 108, de 28 de julho de 2025 &ndash; Diário Oficial
+                </a>
+            </span>
+        </div>
+    </section>
+
+    <section id="atuacao" class="section">
+        <div class="container">
+            <h2 class="section-title">Áreas de Atuação</h2>
+            <p class="section-subtitle">
+                Como as competências legais se traduzem no dia a dia da equipe.
+            </p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Currículo em Sala de Aula</h3>
+                    <p>
+                        Orienta os professores na implementação do currículo e no uso de materiais
+                        didáticos, acompanhando as aulas quando necessário.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>Formação Continuada</h3>
+                    <p>
+                        Identifica necessidades e promove encontros, oficinas e grupos de estudo, em
+                        articulação com a EFAPE.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <h3>Avaliações e Resultados</h3>
+                    <p>
+                        Analisa os resultados de avaliações internas e externas e propõe medidas para
+                        melhorar os indicadores da educação básica.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Inclusão e Salas de Leitura</h3>
+                    <p>
+                        Orienta a educação especial e a inclusão educacional e implanta e
+                        supervisiona as salas de leitura das escolas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Canais de Atendimento</h3>
+                    <p>Fale com a Equipe de Especialistas em Currículo:</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:suz.eec@educacao.sp.gov.br">suz.eec@educacao.sp.gov.br</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-globe"></i>
+                            <a href="https://www.educacao.sp.gov.br/uresuzano" target="_blank" rel="noopener">
+                                Site oficial da URE Suzano
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <a href="https://doe.sp.gov.br/executivo/secretaria-da-educacao/resolucao-seduc-n-108-de-28-de-julho-de-2025-20250728112312201228596"
+                                target="_blank" rel="noopener">
+                                Resolução SEDUC nº 108/2025
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <a href="index.html">Organograma da URE Suzano</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-team">
+                    <h4>Coordenação da EEC</h4>
+                    <p><strong>Responsável (CEC):</strong> Daniella Lusni de Souza</p>
+                    <div class="gov-logo-placeholder">
+                        <span>Unidade Regional de Ensino de Suzano</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Unidade Regional de Ensino de Suzano.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Equipe da EEC. Para atualizar, edite só esta lista: os cards, os grupos por
+        // pasta, os atalhos e os totais da página são gerados a partir dela.
+        const equipe = [
+            { nome: 'Alessandra Wink', pasta: 'Conviva', email: 'wink@professor.educacao.sp.gov.br' },
+            { nome: 'Ari Oliveira Carvalho Junior', pasta: 'Desenvolvimento Curricular', email: 'aricarvalho@professor.educacao.sp.gov.br' },
+            { nome: 'Fabiana Gomes Ramos da Silva', pasta: 'Desenvolvimento Curricular', email: 'gomesramos@professor.educacao.sp.gov.br' },
+            { nome: 'Jéssica Souza Kumagai', pasta: 'Desenvolvimento Curricular', email: 'jessicakumagai@professor.educacao.sp.gov.br' },
+            { nome: 'José Vandei Silva de Oliveira', pasta: 'Desenvolvimento Curricular', email: 'josevandei@professor.educacao.sp.gov.br' },
+            { nome: 'Mariana Pereira Santana Santos', pasta: 'Desenvolvimento Curricular', email: 'marianapsantana@professor.educacao.sp.gov.br' },
+            { nome: 'Priscila Ribeiro da Silva', pasta: 'Desenvolvimento Curricular', email: 'priscilars@professor.educacao.sp.gov.br' },
+            { nome: 'Sandra Regina Soares Clemente', pasta: 'Desenvolvimento Curricular', email: 'sandraclemente@professor.educacao.sp.gov.br' },
+            { nome: 'Juliana Francisco de Oliveira Jaques', pasta: 'Educação Especial', email: 'jaques@professor.educacao.sp.gov.br' },
+            { nome: 'Paula Margarete Alves', pasta: 'Educação Especial', email: 'paulamargarete@professor.educacao.sp.gov.br' },
+            { nome: 'Carla de Almeida Leite', pasta: 'Multiplica', email: 'carla.leite@educacao.sp.gov.br' },
+            { nome: 'Marinete Pereira de Souza Oliveira', pasta: 'Multiplica', email: 'marineteoliveira@professor.educacao.sp.gov.br' },
+            { nome: 'Midian de Almeida Pereira', pasta: 'Multiplica', email: 'midianalmeida@professor.educacao.sp.gov.br' },
+            { nome: 'Amanda Paula Rodrigues Teixeira', pasta: 'Qualidade da Aula', email: 'amandaprodrigues@professor.educacao.sp.gov.br' },
+            { nome: 'Ana Deise Lavor Firmino', pasta: 'Qualidade da Aula', email: 'analavor@professor.educacao.sp.gov.br' },
+            { nome: 'Camila Santos Rocha', pasta: 'Qualidade da Aula', email: 'camilasantosrocha@professor.educacao.sp.gov.br' },
+            { nome: 'Claudia B.S. Mirandola', pasta: 'Qualidade da Aula', email: 'claudiamirandola@professor.educacao.sp.gov.br' },
+            { nome: 'Fábio de Paula Ferraz', pasta: 'Qualidade da Aula', email: 'fabioferraz@professor.educacao.sp.gov.br' },
+            { nome: 'Lucas da Costa Henrique', pasta: 'Qualidade da Aula', email: 'lucasc@professor.educacao.sp.gov.br' },
+            { nome: 'Marcelo Vicente Cavalcante da Silva', pasta: 'Qualidade da Aula', email: 'marcelocavalcante@professor.educacao.sp.gov.br' },
+            { nome: 'Núbia Miranda da Silva', pasta: 'Qualidade da Aula', email: 'nubiamiranda@professor.educacao.sp.gov.br' },
+            { nome: 'Simone Barone Yoshioka Salermo', pasta: 'Qualidade da Aula', email: 'sbaroni@professor.educacao.sp.gov.br' },
+            { nome: 'Thais Aleksejuk Bernardes', pasta: 'Qualidade da Aula', email: 'aleksejuk@professor.educacao.sp.gov.br' },
+            { nome: 'Valéria Santos França', pasta: 'Qualidade da Aula', email: 'valeriafranca@professor.educacao.sp.gov.br' },
+            { nome: 'Verônica de Freitas Fiori', pasta: 'Qualidade da Aula', email: 'veronicafiori@professor.educacao.sp.gov.br' },
+            { nome: 'Lais Guimarães Furst', pasta: 'Recomposição', email: 'furst@professor.educacao.sp.gov.br' },
+            { nome: 'Carlos Magno Precechan', pasta: 'Tecnologia', email: 'precechan@professor.educacao.sp.gov.br' },
+        ];
+
+        (function () {
+            const iniciais = nome => {
+                const partes = nome.trim().split(/\s+/);
+                return (partes[0][0] + partes[partes.length - 1][0]).toUpperCase();
+            };
+
+            const slug = texto => texto
+                .normalize('NFD')
+                .replace(/[̀-ͯ]/g, '')
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, '-');
+
+            const grupos = {};
+            equipe.forEach(p => (grupos[p.pasta] = grupos[p.pasta] || []).push(p));
+            const pastas = Object.keys(grupos).sort((a, b) => a.localeCompare(b, 'pt-BR'));
+
+            const nav = document.getElementById('pasta-nav');
+            const container = document.getElementById('equipe-grupos');
+
+            pastas.forEach(pasta => {
+                const membros = grupos[pasta].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+                const id = 'pasta-' + slug(pasta);
+
+                const chip = document.createElement('a');
+                chip.className = 'pasta-chip';
+                chip.href = '#' + id;
+                chip.textContent = `${pasta} (${membros.length})`;
+                nav.appendChild(chip);
+
+                const grupo = document.createElement('div');
+                grupo.className = 'team-group';
+                grupo.id = id;
+
+                const titulo = document.createElement('h3');
+                titulo.className = 'team-group-title';
+                titulo.textContent = pasta;
+                const contador = document.createElement('span');
+                contador.className = 'team-count';
+                contador.textContent = membros.length;
+                titulo.appendChild(contador);
+                grupo.appendChild(titulo);
+
+                const grid = document.createElement('div');
+                grid.className = 'team-grid';
+
+                membros.forEach(p => {
+                    const card = document.createElement('div');
+                    card.className = 'person-card';
+                    card.innerHTML = `
+                        <div class="avatar"></div>
+                        <div class="person-info">
+                            <div class="person-name"></div>
+                            <div class="person-pasta"></div>
+                            <a class="person-email"></a>
+                        </div>`;
+                    card.querySelector('.avatar').textContent = iniciais(p.nome);
+                    card.querySelector('.person-name').textContent = p.nome;
+                    card.querySelector('.person-pasta').textContent = p.pasta;
+                    const email = card.querySelector('.person-email');
+                    email.href = 'mailto:' + p.email;
+                    email.textContent = p.email;
+                    grid.appendChild(card);
+                });
+
+                grupo.appendChild(grid);
+                container.appendChild(grupo);
+            });
+
+            document.getElementById('total-pecs').textContent = equipe.length;
+            document.getElementById('total-pastas').textContent = pastas.length;
+            document.getElementById('stat-pecs').setAttribute('data-target', equipe.length);
+        })();
+    </script>
+    <script src="setor.js"></script>
+</body>
+
+</html>
